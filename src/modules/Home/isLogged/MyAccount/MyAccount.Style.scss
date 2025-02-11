@@ -1,0 +1,9 @@
+@import '../../../../utils/colors.scss';
+
+.my-account__container {
+    background-color: $bkgPage;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 60px;
+    gap: 30px;
+}

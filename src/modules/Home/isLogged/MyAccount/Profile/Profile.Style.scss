@@ -1,0 +1,115 @@
+@import '../../../../../utils/colors.scss';
+
+.profile__container {
+    .profile__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .profile__basic-infor,
+        .profile__change-pass {
+            background-color: $white;
+            border-radius: 8px;
+            box-shadow: $boxShadow;
+            padding: 15px;
+
+            .basic-infor__title,
+            .change-pass__title {
+                color: $title;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            .btn--edit {
+                margin: 0;
+                padding: 0;
+                text-transform: none;
+                color: $primaryDefault;
+                font-size: 18px;
+                font-weight: 700;
+                border: none;
+                background-color: transparent;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: transparent;
+                    text-decoration: underline;
+                    color: $primary600;
+                }
+            }
+
+            .form__basic-infor {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                padding-bottom: 30px;
+
+                .form__label {
+                    font-size: 18px;
+                    height: 40px;
+                    line-height: 2.5;
+                }
+
+                .form__input--disabled {
+                    width: 100%;
+                    background-color: $bgDisabled;
+                    padding: 15px 0 15px 15px;
+                    border-radius: 10px;
+                    font-size: 17px;
+                    color: $textDisabled;
+                }
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+
+            .form__change-pass {
+                display: flex;
+                margin-top: 20px;
+                align-items: center;
+                gap: 4rem;
+
+                .form__label {
+                    flex: .5;
+                    font-size: 18px;
+                }
+
+                .input--disabled {
+                    border: none;
+                    background-color: $bgDisabled;
+                    padding: 10px 15px;
+                }
+
+                .input {
+                    flex: 2;
+                    font-size: 18px;
+                    border-radius: 10px;
+                    position: relative;
+                }
+
+                .form__input {
+                    border: 1px solid $black;
+                    padding: 10px 15px;
+
+                    ::placeholder {
+                        color: $gray;
+                    }
+                }
+
+                .icon {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    box-sizing: border-box;
+                    position: absolute;
+                    right: 5.5%;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

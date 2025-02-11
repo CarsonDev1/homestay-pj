@@ -1,0 +1,126 @@
+@import "../../utils/colors.scss";
+
+.search_Item--content {
+  padding: 20px;
+  background-color: $white;
+  -webkit-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+  border-radius: 8px;
+
+  .search_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 28%;
+
+    .search_content-Item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid $gray;
+      padding: 10px;
+      border-radius: 4px;
+      position: relative;
+
+      .search_Item--icon {
+        color: gray;
+        width: 20px;
+        height: 20px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .search_Item--input {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      .search_Item--text {
+        width: 100%;
+        color: $black;
+        font-size: 18px;
+        line-height: 20px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .search_Item-date {
+        position: absolute;
+        top: 105%;
+        border-radius: 8px;
+        -webkit-box-shadow: $boxShadow;
+        box-shadow: $boxShadow;
+        z-index: 1000;
+      }
+
+      .search_Item--options {
+        position: absolute;
+        top: 50px;
+        background-color: $white;
+        color: $black;
+        font-size: 16px;
+        border-radius: 0 0 8px 8px;
+        -webkit-box-shadow: $boxShadow;
+        box-shadow: $boxShadow;
+        z-index: 1000;
+
+        .search_Item--optionItem {
+          width: 350px;
+          height: 60px;
+          display: flex;
+          justify-content: space-between;
+          margin: 10px;
+          padding: 10px 20px;
+        }
+
+        .search_Item--optionItem-optionCounter {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          font-size: 14px;
+          color: $black;
+
+          .optionCounterButton {
+            width: 40px;
+            height: 40px;
+            border: 1px solid $primary600;
+            color: $textDisabled;
+            background-color: $white;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .optionCounterButton:disabled {
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+
+  .search_Item--btn-search {
+    padding: 10px 30px;
+    background-color: $primaryDefault;
+    color: $white;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    border-radius: 8px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $primary600;
+    }
+  }
+}

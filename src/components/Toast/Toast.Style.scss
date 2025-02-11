@@ -1,0 +1,47 @@
+@import '../../utils/colors.scss';
+
+.toast {
+    min-width: 35%;
+    position: fixed;
+    top: 4%;
+    right: 1%;
+    align-items: center;
+    border-radius: 0;
+    background-color: $white !important;
+    gap: 1rem;
+    box-shadow: $boxShadow !important;
+    z-index: 99999;
+    transition: all linear .3s;
+    animation: slideInLeft ease .3s, fadeOut linear 1s 5s forwards;
+}
+
+.waiting {
+    min-width: 35%;
+    position: fixed;
+    top: 4%;
+    right: 1%;
+    align-items: center;
+    border-radius: 0;
+    background-color: $white !important;
+    gap: 1rem;
+    box-shadow: $boxShadow !important;
+    z-index: 99999;
+    transition: all linear .3s;
+    animation: slideInLeft ease .3s;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}

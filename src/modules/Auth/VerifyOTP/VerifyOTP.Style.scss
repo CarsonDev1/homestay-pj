@@ -1,0 +1,99 @@
+@import '../../../utils/colors.scss';
+
+.container__verify-otp {
+    background-image: url('../../../assets/verifypassword.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.main_container__verify-otp {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: $boxShadow;
+    border-radius: 8px;
+}
+
+.title__verify-otp {
+    color: $title;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.title_attention__verify-otp {
+    text-align: center;
+    font-size: 16px;
+    width: 355px;
+    margin-bottom: 20px;
+    font-weight: 570;
+    color: #000000;
+}
+
+.form_container__verify-otp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__verify-otp {
+    width: 100%;
+}
+
+.input_container__verify-otp {
+    margin-bottom: 20px;
+
+}
+
+.input_container__verify-otp label {
+    display: block;
+    margin-bottom: 8px;
+    color: $title;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.input_container__verify-otp input {
+    width: 100%;
+    padding: 8px 14px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid $gray;
+    letter-spacing: 10px;
+}
+
+.submit_button__verify-otp {
+    width: 65%;
+    padding: 10px;
+    margin-left: 60px;
+    background-color: $primaryDefault;
+    color: $white;
+    border: none;
+    font-weight: 700;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+.submit_button__verify-otp:hover {
+    cursor: pointer;
+    background-color: $secondaryDefault;
+}
+
+.submit_button__verify-otp:disabled {
+    cursor: default;
+    background-color: $bgDisabled;
+    border: 1px solid $thirdaryDefault;
+    color: $thirdaryDefault;
+    font-weight: normal;
+}

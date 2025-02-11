@@ -1,0 +1,57 @@
+@import '../../../utils/colors.scss';
+
+.partner-dashboard__container {
+    background-color: $bkgPage;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .dashboard__analysis {
+        background-color: $white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: $boxShadow;
+
+        .analysis__box {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+
+            .box__content {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
+                border-radius: 6px;
+                gap: 15px;
+                background-color: rgba($color: $primaryDefault, $alpha: .8);
+
+                .box__number {
+                    color: $white;
+                    font-size: 20px;
+                }
+
+                .box__title {
+                    color: $white;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .dashboard__chart {
+        background-color: $white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: $boxShadow;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+}

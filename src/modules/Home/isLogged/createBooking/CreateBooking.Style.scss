@@ -1,0 +1,286 @@
+@import "../../../../utils/colors.scss";
+
+.createBooking_Container {
+  padding: 20px 60px;
+  background-color: $bkgPage;
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+
+  .createBooking_Content--Hotel-Booker-Voucher {
+    flex: 2;
+
+    .createBooking_Content--Hotel {
+      background-color: $white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      -webkit-box-shadow: $boxShadow;
+      box-shadow: $boxShadow;
+
+      .createBooking_Content--Hotel-Items {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+
+        .createBooking_Content--Hotel-Items--information {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+
+      .createBooking_Content--Hotel-chooseDateandRoom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+
+        .createBooking_Content--Hotel-chooseDate {
+          padding: 10px 20px;
+          background-color: $bgDisabled;
+          border-radius: 8px;
+          margin-right: 16px;
+          position: relative;
+
+          .chooseDate_Item-textDate {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            margin-right: 20px;
+            color: $black;
+
+            .nightText {
+              margin-left: 10px;
+              font-size: 14px;
+              color: $gray;
+
+              &:hover {
+                cursor: default;
+              }
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .chooseDate_Item-date {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+          }
+
+          .chooseDate_Item-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 15px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .createBooking_Content--Hotel-chooseRoom {
+          width: 42%;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          border: 0;
+          padding: 10px 14px;
+          border-radius: 8px;
+          position: relative;
+          background-color: $bgDisabled;
+
+          .search_Item--icon {
+            color: $black;
+            width: 20px;
+            height: 20px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .search_Item--text {
+            width: 100%;
+            color: $black;
+            font-size: 18px;
+            line-height: 20px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .search_Item--options {
+            position: absolute;
+            top: 50px;
+            background-color: $white;
+            color: $black;
+            font-size: 16px;
+            border-radius: 0 0 8px 8px;
+            -webkit-box-shadow: $boxShadow;
+            box-shadow: $boxShadow;
+            z-index: 1000;
+
+            .search_Item--optionItem {
+              width: 350px;
+              height: 60px;
+              display: flex;
+              justify-content: space-between;
+              margin: 10px;
+              padding: 10px 20px;
+            }
+
+            .search_Item--optionItem-optionCounter {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 20px;
+              font-size: 14px;
+              color: $black;
+
+              .optionCounterButton {
+                width: 40px;
+                height: 40px;
+                border: 1px solid $primary600;
+                color: $textDisabled;
+                background-color: $white;
+
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+
+              .optionCounterButton:disabled {
+                cursor: not-allowed;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .createBooking_Content--Booker {
+      margin-top: 30px;
+      background-color: $white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      -webkit-box-shadow: $boxShadow;
+      box-shadow: $boxShadow;
+    }
+
+    .createBooking_Content--Voucher {
+      margin-top: 30px;
+      background-color: $white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      -webkit-box-shadow: $boxShadow;
+      box-shadow: $boxShadow;
+
+      .createBooking_Content--Voucher--btn-useVoucher {
+        width: 20%;
+        padding: 12px 10px;
+        background-color: $primaryDefault;
+        color: $white;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: bold;
+        text-transform: none;
+        border-radius: 8px;
+        border: 1px solid $primaryDefault;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $primary600;
+        }
+      }
+
+      .createBooking_Content--Voucher--btn-disable {
+        width: 20%;
+        padding: 12px 10px;
+        background-color: transparent;
+        color: $textDisabled;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: bold;
+        text-transform: none;
+        border-radius: 8px;
+        border: 1px solid $primary600;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .createBooking_Content--totalPrice-Note {
+    flex: 1;
+
+    .createBooking_Content--totalPrice {
+      background-color: $white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      -webkit-box-shadow: $boxShadow;
+      box-shadow: $boxShadow;
+
+      .createBooking_Content--totalPrice-textLink {
+        text-decoration: underline;
+        color: $textLink;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .createBooking_Content--totalPrice-btn-booking {
+        display: flex;
+        margin: auto;
+        padding: 10px 20px;
+        width: 50%;
+        text-transform: none;
+        color: $white;
+        background-color: $primaryDefault;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid $primaryDefault;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $primary600;
+        }
+      }
+
+      .createBooking_Content--totalPrice-btn-booking--disable {
+        display: flex;
+        margin: auto;
+        padding: 10px 20px;
+        width: 50%;
+        text-transform: none;
+        color: $textDisabled;
+        background-color: transparent;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid $primary600;
+
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .createBooking_Content--Note {
+      margin-top: 30px;
+      background-color: $white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      -webkit-box-shadow: $boxShadow;
+      box-shadow: $boxShadow;
+    }
+  }
+}

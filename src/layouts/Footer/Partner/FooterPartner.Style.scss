@@ -1,0 +1,19 @@
+@import '../../../utils/colors.scss';
+
+.footer__container--customer {
+    background-color: $secondaryDefault;
+    padding: 20px 60px;
+
+    .credit {
+        width: 100%;
+        text-align: center;
+        color: $white;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import "../../../utils/colors.scss";
+
+.header__container--guest {
+    background-color: $primaryDefault;
+    display: flex;
+    padding: 10px 60px;
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nav__container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin-left: 5%;
+        gap: 8%;
+
+        .nav__item {
+            color: $white;
+            font-weight: 700;
+            font-size: 16px;
+
+            &:hover {
+                cursor: pointer;
+                color: rgba($white, .8);
+            }
+        }
+    }
+
+    .auth__container {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        .btn--partner__registration {
+            color: $white;
+            font-weight: 700;
+            text-transform: none;
+            padding: 8px 30px;
+            font-size: 16px;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: rgba($white, 0.3);
+            }
+        }
+
+        .btn--login__register {
+            color: $white;
+            font-weight: 700;
+            text-transform: none;
+            padding: 8px 24px;
+            border: 1px solid black;
+            font-size: 16px;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: rgba($white, 0.3);
+            }
+        }
+    }
+}

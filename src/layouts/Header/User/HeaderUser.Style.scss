@@ -1,0 +1,51 @@
+@import '../../../utils/colors.scss';
+
+.header__container--user {
+	background-color: #423a37;
+	display: flex;
+	padding: 10px 60px;
+
+	.logo {
+		width: 100px;
+		height: 100px;
+	}
+
+	.nav__container {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		margin-left: 5%;
+		gap: 8%;
+
+		.nav__item {
+			color: $white;
+			font-weight: 700;
+			font-size: 16px;
+
+			&:hover {
+				cursor: pointer;
+				color: rgba($white, 0.8);
+			}
+		}
+	}
+
+	.auth__container {
+		display: flex;
+		align-items: center;
+
+		.btn--is__logged {
+			color: $white;
+			font-weight: 700;
+			text-transform: none;
+			padding: 8px 30px;
+			font-size: 16px;
+			border-radius: 8px;
+			display: flex;
+			gap: 1.2rem;
+
+			&:hover {
+				background-color: rgba($white, 0.3);
+			}
+		}
+	}
+}

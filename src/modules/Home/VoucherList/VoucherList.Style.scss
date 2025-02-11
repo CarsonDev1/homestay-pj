@@ -1,0 +1,93 @@
+@import '../../../utils/colors.scss';
+
+.content__banner {
+  height: 100%;
+
+  .banner {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.voucherlist_container {
+  background-color: $bkgPage;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+.boxes-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.box {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background-color: $white;
+  width: 31.8%;
+  box-shadow: $boxShadow;
+  gap: 1.5rem;
+  padding: 0 0 15px;
+}
+
+.box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.box h1 {
+  font-size: 24px;
+  text-align: center;
+  color: $title;
+  font-weight: 700;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  transition: -webkit-line-clamp 0.1s;
+}
+
+.box button {
+  padding: 10px 40px;
+  background-color: $primaryDefault;
+  color: white;
+  border: 1px solid $primaryDefault;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.box button:hover {
+  cursor: pointer;
+  background-color: $primary600;
+}
+
+.box button:disabled {
+  cursor: default;
+  background-color: $bgDisabled;
+  border: 1px solid $thirdaryDefault;
+  color: $thirdaryDefault;
+  font-weight: normal;
+}
+
+.see-more-button {
+  margin-right: 72px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3A73E7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.see-more-button:hover {
+  background-color: $thirdaryDefault;
+}

@@ -1,0 +1,25 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+
+    .error-title {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .error-description {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .homepage {
+        font-size: 15px;
+        text-decoration: underline;
+    }
+}

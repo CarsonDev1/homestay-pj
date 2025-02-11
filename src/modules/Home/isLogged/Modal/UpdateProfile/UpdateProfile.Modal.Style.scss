@@ -1,0 +1,48 @@
+@import '../../../../../utils/colors.scss';
+
+.form__container--modal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .form__control--modal {
+        display: flex;
+        align-items: center;
+
+        .form__label--modal {
+            width: 20%;
+        }
+
+        .form__input--modal {
+            flex: 1;
+            border: 1px solid $gray;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .disabled {
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            background-color: $bgDisabled;
+            color: $textDisabled;
+        }
+
+        .form__input-radio--modal {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            input {
+                width: 16px;
+                height: 16px;
+            }
+
+            label {
+                font-size: 16px;
+            }
+        }
+    }
+}

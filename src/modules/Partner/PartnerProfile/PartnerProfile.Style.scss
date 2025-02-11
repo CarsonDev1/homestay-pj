@@ -1,0 +1,86 @@
+@import '../../../utils/colors.scss';
+
+.partner-profile__container {
+    background-color: $bkgPage;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .partner-profile__information,
+    .partner-profile__change-password {
+        background-color: $white;
+        border-radius: 8px;
+        box-shadow: $boxShadow;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .information__label {
+            font-size: 18px;
+            line-height: 2.5;
+        }
+
+        .change-password__form {
+            display: flex;
+            align-items: center;
+
+            .change-password__form--label {
+                flex: .6;
+                font-size: 18px;
+            }
+
+            .change-password__form--input {
+                flex: 2;
+                font-size: 16px;
+                border-radius: 6px;
+                position: relative;
+            }
+
+            .input--disabled {
+                border: none;
+                background-color: $bgDisabled;
+                padding: 10px 15px;
+            }
+
+            .form__input {
+                border: 1px solid $black;
+                padding: 10px 15px;
+
+                ::placeholder {
+                    color: $gray;
+                }
+            }
+
+            .icon {
+                height: 1.5rem;
+                width: 1.5rem;
+                box-sizing: border-box;
+                position: absolute;
+                right: 5.5%;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .partner-profile__title {
+        color: $title;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .partner-profile__btn--edit {
+        color: $primaryDefault;
+        font-size: 18px;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: $primary600;
+        }
+    }
+}

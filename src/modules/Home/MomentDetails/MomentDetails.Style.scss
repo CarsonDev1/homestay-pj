@@ -1,0 +1,276 @@
+@import "../../../utils/colors.scss";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.moment_Details_Container {
+  background-color: $bkgPage;
+  padding: 20px 60px;
+
+  .momemnt_Details_Content {
+    background-color: $white;
+    box-shadow: $boxShadow;
+    border-radius: 8px;
+
+    .moment_Details-image_Wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+
+      .slick-slider {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+        .slick-dots {
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .slick-dots li button:before {
+          color: $white;
+        }
+      }
+
+      .slick-slider {
+        width: 100%;
+      }
+
+      .slick-list {
+        overflow: visible;
+      }
+
+      .banner_image {
+        position: relative;
+      }
+
+      .banner_image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .center {
+        transform: scale(1.5);
+        opacity: 1;
+        z-index: 2;
+        border-radius: 8px;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+      }
+
+      .side {
+        transform: scale(1);
+        opacity: 0.5;
+        z-index: 1;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+      }
+
+    }
+
+    .moment_Details_Title {
+      margin: 20px 20px 0 20px;
+
+      .moment_Details_Title-name {
+        font-size: 24px;
+        font-weight: bold;
+        color: $title;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        transition: -webkit-line-clamp 1s;
+      }
+
+      .moment_Details_Title-rev {
+        font-size: 18px;
+        font-weight: 400;
+        color: $gray;
+      }
+    }
+
+    .moment_Details_Description {
+      margin: 15px 20px 0 20px;
+
+      .moment_Details_Title-des {
+        font-size: 18px;
+        font-weight: 400;
+        color: $black;
+      }
+    }
+
+    .moment_Details_Comment-Container {
+      margin: 15px 20px 0 20px;
+
+      .moment_Details_Comment-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: $title;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+
+      .moment_Details_Comment {
+        background-color: $bgTitle;
+        border-radius: 8px;
+
+        .moment_Details_Comment-visitor {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+
+          .Comment_Account {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 20px 0 20px;
+
+            .Comment_Account-icon {
+              width: 65px;
+              height: 65px;
+              border-radius: 50%;
+              object-fit: cover;
+              pointer-events: none;
+            }
+
+            .Comment_Account-name {
+              font-size: 18px;
+              font-weight: bold;
+              color: $black;
+            }
+          }
+
+          .Comment_Account-desc {
+            margin: 0 20px 20px 20px;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .moment_Details_Your-Comment {
+      margin: 15px 20px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+
+      .Your_Comment-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: $title;
+      }
+
+      .Your_Comment-desc {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+
+        .Your_Comment-avatar {
+          min-width: 100px;
+          max-width: 100px;
+          min-height: 100px;
+          max-height: 100px;
+          border-radius: 50%;
+          pointer-events: none;
+        }
+      }
+
+      .btn--send {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        padding: 12px;
+
+        .Your_Comment-send {
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .moment_Details_Another-Container {
+    margin-top: 20px;
+    background-color: $white;
+    box-shadow: $boxShadow;
+    border-radius: 8px;
+
+    .moment_Details_Another-title {
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: $title;
+    }
+
+    .moment_Details_Another-Content {
+      margin: 0 30px 0 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      overflow-x: hidden;
+
+      .moment_Details_Another_Item {
+        margin-bottom: 20px;
+        flex: 1 1 calc((100% - 60px) / 4);
+        max-width: calc((100% - 60px) / 4);
+        box-sizing: border-box;
+        border-radius: 8px;
+        text-decoration: none;
+        color: initial;
+        border: 1px solid $black;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        transition: all .3s linear;
+
+        .md_Another_img {
+          width: 100%;
+          height: 200px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          object-fit: cover;
+        }
+
+        .md_Another_Item-subtitle {
+          margin: 10px;
+          font-weight: bold;
+          font-size: 18px;
+          text-align: left;
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          transition: -webkit-line-clamp 0.1s;
+        }
+
+        .md_Another_Item-comment {
+          margin: 0 10px 10px 10px;
+          font-size: 16px;
+          color: $gray;
+          font-weight: 400;
+
+          &:hover {
+            cursor: default;
+          }
+        }
+
+        &:hover {
+          box-shadow: $boxShadow;
+        }
+      }
+    }
+  }
+}

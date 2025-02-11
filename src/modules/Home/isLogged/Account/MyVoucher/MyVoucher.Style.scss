@@ -1,0 +1,19 @@
+@import '../../../../../utils/colors.scss';
+
+.my-voucher__container {
+  .my-voucher__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .my-voucher__nav {
+      background-color: $white;
+      box-shadow: $boxShadow;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 8px;
+    }
+  }
+}

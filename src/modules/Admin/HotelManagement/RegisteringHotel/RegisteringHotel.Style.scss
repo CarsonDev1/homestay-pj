@@ -1,0 +1,16 @@
+@import '../../../../utils/colors.scss';
+
+.admin-hotel-register__container {
+    background-color: $bkgPage;
+    padding: 20px 40px;
+
+    .admin-hotel-register__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 15px;
+        background-color: $white;
+        box-shadow: $boxShadow;
+        border-radius: 8px;
+    }
+}

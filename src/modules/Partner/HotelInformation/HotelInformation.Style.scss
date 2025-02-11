@@ -1,0 +1,24 @@
+@import '../../../utils/colors.scss';
+
+.partner-hotel__container {
+    background-color: $bkgPage;
+    padding: 20px 60px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    .partner-hotel__sidebar {
+        flex: 0.5;
+        background-color: $white;
+        box-shadow: $boxShadow;
+        border-radius: 8px;
+    }
+
+    .partner-hotel__content {
+        flex: 2;
+        background-color: $white;
+        box-shadow: $boxShadow;
+        border-radius: 8px;
+        padding: 20px;
+    }
+}

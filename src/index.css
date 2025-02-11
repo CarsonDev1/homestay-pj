@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'UTM Avo';
+	src: url('./fonts/UTM\ Avo.ttf') format('truetype');
+}
+
+*,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

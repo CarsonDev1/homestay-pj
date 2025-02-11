@@ -1,0 +1,44 @@
+@import "../../../../../utils/colors.scss";
+
+.myBooking_Container {
+  .myBooking_Content-Container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .myBooking_Content-btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .myBooking_btn-export {
+        margin-bottom: 20px;
+        background-color: $primaryDefault;
+        color: $white;
+        border-radius: 8px;
+        text-transform: none;
+        font-size: 16px;
+        padding: 10px 30px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $primary600;
+        }
+      }
+    }
+
+    .myBooking_Content-navItem {
+      background-color: $white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      -webkit-box-shadow: $boxShadow;
+      box-shadow: $boxShadow;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+  }
+}

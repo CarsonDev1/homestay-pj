@@ -1,0 +1,157 @@
+@import '../../../utils/colors.scss';
+
+.container_partner_registration {
+    background-image: url('../../../assets/register.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main_container_partner_registration {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.title_partner_registration {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 700;
+    color: $title;
+}
+
+.form_container_partner_registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_partner_registration {
+    width: 100%;
+}
+
+.input_container_partner_registration {
+    margin-bottom: 20px;
+}
+
+.input_container_partner_registration label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: $title;
+    font-size: 18px
+}
+
+.input_container_partner_registration input {
+    width: 100%;
+    padding: 8px 14px;
+    background-color: $white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid $gray;
+}
+
+.password {
+    position: relative;
+
+    .icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        box-sizing: border-box;
+        position: absolute;
+        top: 58%;
+        right: 3%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.click_checkbox_container_partner_registration {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.click_checkbox_container_partner_registration input {
+    margin-right: 10px;
+}
+
+.checkbox_button_container_partner_registration {
+    height: 20px;
+    width: 20px;
+}
+
+.submit_button {
+    width: 65%;
+    padding: 10px;
+    margin-left: 60px;
+    background-color: $primaryDefault;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid $primaryDefault;
+
+    &:hover {
+        background-color: $secondaryDefault;
+    }
+}
+
+.disable {
+    width: 65%;
+    padding: 10px;
+    margin-left: 60px;
+    background-color: $bgDisabled;
+    color: $thirdaryDefault;
+    border: none;
+    font-weight: normal;
+    border-radius: 40px;
+    font-size: 16px;
+    border: 1px solid $thirdaryDefault;
+
+    &:hover {
+        cursor: not-allowed;
+        background-color: $bgDisabled;
+    }
+}
+
+.link_container__partner_registration {
+    display: flex;
+    font-size: 16px;
+
+}
+
+.container_title_partner_registration {
+    color: $black;
+    font-weight: 700;
+}
+
+.checkbox_container_title_partner_registration {
+    margin-left: 5px;
+    margin-right: 5px;
+    background: none;
+    border: none;
+    color: $primaryDefault;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+
+    &:hover {
+        color: $thirdaryDefault;
+    }
+}

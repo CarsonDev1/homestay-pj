@@ -1,0 +1,115 @@
+@import '../../../utils/colors.scss';
+
+.Post__container {
+  background-color: #F0F2F5;
+}
+
+.container_Post_All {
+  padding: 20px 60px;
+  position: relative;
+}
+
+.container_Post {
+  padding: 0 60px;
+  position: relative;
+}
+
+
+.Post_campus h1 {
+  color: $title;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.gallery_post {
+  padding-bottom: 20px;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 30px;
+}
+
+.gallery_post::-webkit-scrollbar {
+  display: none;
+}
+
+.Post_wrap {
+  width: calc(100% / 4.3);
+  border-radius: 8px;
+  background-color: $white;
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease;
+  box-shadow: $boxShadow;
+}
+
+.Post_wrap:hover {
+  cursor: pointer;
+  box-shadow: $boxShadowHover;
+}
+
+.Post_wrap img {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.Post_colum {
+  padding: 0 9px;
+}
+
+.Post_colum h1 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
+  height: 40px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  transition: -webkit-line-clamp 0.1s;
+}
+
+.comment {
+  font-size: 20px;
+  color: #A9A9A9;
+  margin: 50px 0 80px 0;
+}
+
+.scroll-button-momentlist {
+  border-radius: 100%;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  background-color: $primaryDefault;
+  color: $white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.scroll-button-momentlist.left-momentlist {
+  margin-right: 20px;
+}
+
+.scroll-button-momentlist.right-momentlist {
+  margin-left: 20px;
+}
+
+.scroll-button-momentlist:hover {
+  background-color: $primary600;
+}
+
+.scroll-button-momentlist.right-momentlist.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+
+  &:hover {
+    background-color: $primaryDefault;
+  }
+}

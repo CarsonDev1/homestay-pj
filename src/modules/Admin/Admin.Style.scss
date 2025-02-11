@@ -1,0 +1,20 @@
+@import '../../utils/colors.scss';
+
+.admin__container {
+    display: flex;
+    position: relative;
+
+    .list-item__button {
+        height: 50px;
+
+        .list-item__title {
+            color: $white;
+            font-size: 18px;
+        }
+
+        .list-item__sub-title {
+            color: $white;
+            font-size: 16px;
+        }
+    }
+}

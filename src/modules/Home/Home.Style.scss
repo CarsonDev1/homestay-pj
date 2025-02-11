@@ -1,0 +1,58 @@
+@import '../../utils/colors.scss';
+
+.home__container {
+  background-color: $bkgPage;
+}
+
+.content__banner {
+  height: 100%;
+
+  .banner {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.content__top-hotels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 60px;
+
+  .top-hotels__title {
+    color: $title;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .top-hotels__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 32px;
+
+    .wrapper__hotel {
+      width: calc(100% / 4.3);
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0 0 20px;
+      border-radius: 8px;
+      box-shadow: $boxShadow;
+      transition: all .3s ease;
+
+      .hotel__infor {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 20px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: $boxShadowHover;
+      }
+    }
+  }
+}

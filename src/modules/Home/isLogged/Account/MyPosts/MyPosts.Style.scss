@@ -1,0 +1,19 @@
+@import '../../../../../utils/colors.scss';
+
+.my-posts__container {
+    .my-post__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .my-post__nav {
+            background-color: $white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            box-shadow: $boxShadow;
+        }
+    }
+}

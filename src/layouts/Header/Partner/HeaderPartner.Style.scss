@@ -1,0 +1,48 @@
+@import '../../../utils/colors.scss';
+
+.header__container--partner {
+    background-color: $primaryDefault;
+    display: flex;
+    padding: 10px 60px;
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nav__container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin-left: 4%;
+        gap: 6%;
+
+        .nav__item {
+            color: $white;
+            font-weight: 700;
+            font-size: 16px;
+
+            &:hover {
+                cursor: pointer;
+                color: rgba($white, .8);
+            }
+        }
+    }
+
+    .auth__container {
+        display: flex;
+        align-items: center;
+
+        .btn--is__logged {
+            display: flex;
+            align-items: center;
+            color: $white;
+            font-weight: 700;
+            padding: 8px 30px;
+            font-size: 16px;
+            border-radius: 8px;
+            display: flex;
+            gap: 1.2rem;
+        }
+    }
+}

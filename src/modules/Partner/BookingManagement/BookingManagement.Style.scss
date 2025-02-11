@@ -1,0 +1,29 @@
+@import '../../../utils/colors.scss';
+
+.partner-booking__container {
+    background-color: $bkgPage;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .partner-booking__nav {
+        background-color: $white;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 8px;
+        box-shadow: $boxShadow;
+    }
+
+    .partner-booking__table {
+        background-color: $white;
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: 8px;
+        box-shadow: $boxShadow;
+    }
+}

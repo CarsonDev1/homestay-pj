@@ -1,0 +1,101 @@
+@import '../../../utils/colors.scss';
+
+.footer__container--customer {
+    background-color: $secondaryDefault;
+    padding: 10px 60px;
+
+    .footer--logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .footer--wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .wrapper--box {
+            display: flex;
+            flex: 1.1;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            .box__title {
+                color: $white;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .box__item {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                transition: all .3s linear;
+
+                .item__text {
+                    color: $white;
+                    font-size: 16px;
+                }
+
+                &:hover {
+                    gap: 1.5rem;
+                }
+            }
+
+            .quick-nav {
+                transition: all .3s linear;
+
+                .nav {
+                    width: 100%;
+
+                    &:hover {
+                        color: rgba($white, .85);
+                    }
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &:last-child {
+                flex: 1.2;
+            }
+
+            .box__qr-code {
+                display: flex;
+                gap: 30px;
+
+                .box__download {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .item__text {
+                        color: $white;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .credit {
+        width: 100%;
+        text-align: center;
+        color: $white;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}

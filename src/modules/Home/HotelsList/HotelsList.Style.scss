@@ -1,0 +1,291 @@
+@import '../../../utils/colors.scss';
+
+.hotels-list__container {
+    background-color: $bkgPage;
+    padding: 20px 60px;
+
+    .search_Item--content {
+        padding: 20px;
+        background-color: $white;
+        -webkit-box-shadow: $boxShadow;
+        box-shadow: $boxShadow;
+        border-radius: 8px;
+
+        .search_content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 28%;
+
+            .search_content-Item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border: 1px solid $gray;
+                padding: 10px;
+                border-radius: 4px;
+                position: relative;
+
+                .search_Item--icon {
+                    color: gray;
+                    width: 20px;
+                    height: 20px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .search_Item--input {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+
+                .search_Item--text {
+                    width: 100%;
+                    color: $black;
+                    font-size: 18px;
+                    line-height: 20px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .search_Item-date {
+                    position: absolute;
+                    top: 105%;
+                    border-radius: 8px;
+                    -webkit-box-shadow: $boxShadow;
+                    box-shadow: $boxShadow;
+                    z-index: 1000;
+                }
+
+                .search_Item--options {
+                    position: absolute;
+                    top: 50px;
+                    background-color: $white;
+                    color: $black;
+                    font-size: 16px;
+                    border-radius: 0 0 8px 8px;
+                    -webkit-box-shadow: $boxShadow;
+                    box-shadow: $boxShadow;
+                    z-index: 1000;
+
+                    .search_Item--optionItem {
+                        width: 350px;
+                        height: 60px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                        padding: 10px 20px;
+                    }
+
+                    .search_Item--optionItem-optionCounter {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 20px;
+                        font-size: 14px;
+                        color: $black;
+
+                        .optionCounterButton {
+                            width: 40px;
+                            height: 40px;
+                            border: 1px solid $primary600;
+                            color: $textDisabled;
+                            background-color: $white;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+
+                        .optionCounterButton:disabled {
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+            }
+        }
+
+        .search_Item--btn-search {
+            padding: 10px 30px;
+            background-color: $primaryDefault;
+            color: $white;
+            text-transform: none;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 20px;
+            border-radius: 8px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $primary600;
+            }
+        }
+    }
+
+    .filter__container {
+        width: 31%;
+        background-color: $white;
+        border-radius: 8px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        box-shadow: $boxShadow;
+
+        .filter__title {
+            font-size: 20px;
+            color: $title;
+            font-weight: 700;
+        }
+
+        .filter__rating,
+        .filter__price,
+        .filter__amenities {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .rating__title,
+            .price__title,
+            .amenities__title {
+                font-size: 18px;
+                color: $title;
+                font-weight: 700;
+            }
+
+            .rating__checkbox,
+            .amenities__checkbox {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .input__checkbox {
+                    min-width: 20px;
+                    max-width: 20px;
+                    min-height: 20px;
+                    max-height: 20px;
+                }
+
+                .star {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+            }
+
+            .price__input {
+                max-width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+            }
+        }
+    }
+
+    .list__container {
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .list__item {
+            width: 100%;
+            background-color: $white;
+            border-radius: 8px;
+            padding: 15px;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+
+            .item__infor {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 1.4rem;
+
+                .hotel__name {
+                    color: $title;
+                    font-size: 22px;
+                    font-weight: 700;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    transition: -webkit-line-clamp 0.1s;
+                }
+
+                .hotel__reviews {
+                    color: $title;
+                    font-weight: 700;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .hotel__location {
+                    display: flex;
+                    align-items: flex-end;
+                    gap: .5rem;
+
+                    .location__address {
+                        font-size: 16px;
+                        color: $gray;
+                    }
+                }
+
+                .infor__room {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    background-color: $bkgPage;
+                    padding: 10px 15px;
+                    border-radius: 6px;
+
+                    .room__type {
+                        font-size: 16px;
+                        color: $title;
+                        font-weight: 700;
+                    }
+
+                    .room__quantity {
+                        color: $buttonSecondary;
+                        font-size: 15px;
+
+                    }
+
+                    .room__special-price {
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: $title;
+                    }
+
+                    .btn--detail {
+                        background-color: $primaryDefault;
+                        padding: 10px 25px;
+                        color: $white;
+                        border-radius: 8px;
+                        text-transform: none;
+                        font-weight: 700;
+                        font-size: 16px;
+
+                        &:hover {
+                            background-color: $primary600;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                box-shadow: $boxShadow;
+            }
+        }
+    }
+}
