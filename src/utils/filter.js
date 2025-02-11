@@ -150,7 +150,7 @@ export const filterAccountPartner = (listAccounts) => {
 export const filterImageHotelView = (listImages) => {
 	let listHotelView = [];
 	listImages.forEach((element) => {
-		if (element?.title === 'Hotel View') {
+		if (element?.title === 'homeStay View') {
 			listHotelView.push(element);
 		}
 	});
@@ -501,7 +501,7 @@ export const filterListHotelsHaveRoom = (listHotels) => {
 	let listHotel = [];
 
 	listHotels?.forEach((element) => {
-		if (element?.rooms?.length > 0) {
+		if (element?.length > 0) {
 			listHotel.push(element);
 		}
 	});

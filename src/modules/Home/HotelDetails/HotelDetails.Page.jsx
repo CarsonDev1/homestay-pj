@@ -55,9 +55,10 @@ const HotelDetailsPage = () => {
 	const roomGuestRef = useRef(null);
 
 	const [data, setData] = useState({});
-	const [dataHotels, setDataHotels] = useState([]);
 
-	console.log('data', data);
+	// console.log('data', data);
+
+	const [dataHotels, setDataHotels] = useState([]);
 
 	const [isSelected, setIsSelected] = useState(0);
 
@@ -650,7 +651,7 @@ const HotelDetailsPage = () => {
 								</MapModal>
 							</Box>
 							<Typography className='information__cheapest-price'>
-								{formatPrice(findMinPrice(data))} VND
+								{data?.price?.toLocaleString()} VND
 							</Typography>
 						</Box>
 
@@ -685,7 +686,7 @@ const HotelDetailsPage = () => {
 								))}
 								<GalleryDetailsModal
 									data={{
-										listImages: data?.hotel?.hotelImages,
+										listImages: data?.homeStayImages,
 									}}
 								>
 									<Box className='view-all'>
@@ -724,7 +725,7 @@ const HotelDetailsPage = () => {
 									cursor: 'pointer',
 									p: '0 20px',
 									textAlign: 'center',
-									borderRight: index < 3 ? `1px solid ${themeColors.gray}` : '0',
+									borderRight: index < 2 ? `1px solid ${themeColors.gray}` : '0',
 									'&:hover': {
 										color:
 											index !== isSelected
@@ -741,9 +742,9 @@ const HotelDetailsPage = () => {
 					{isSelected === 0 ? (
 						<DescriptionPage
 							data={{
-								year: data?.hotel?.openedIn,
+								year: data?.openedIn,
 								numberRooms: data?.totalRoom,
-								desc: data?.hotel?.description,
+								desc: data?.description,
 							}}
 						/>
 					) : null}
@@ -767,7 +768,7 @@ const HotelDetailsPage = () => {
 
 						<Box sx={{ display: 'flex', gap: '1rem', mt: '20px' }}>
 							{dataHotels?.slice(0, 4)?.map((hotel) => (
-								<Box className='card__hotel' key={hotel?.hotelID}>
+								<Box className='card__hotel' key={hotel?.homeStayID}>
 									<img
 										loading='lazy'
 										src={`${URL_IMAGE}${hotel?.mainImage}`}

@@ -17,7 +17,7 @@
     "@fortawesome/free-regular-svg-icons": "6.5.1",
     "@fortawesome/free-solid-svg-icons": "6.5.1",
     "@fortawesome/react-fontawesome": "0.2.0",
-    "@mui/icons-material": "5.15.10",
+    "@mui/icons-material": "^6.4.3",
     "@mui/lab": "5.0.0-alpha.167",
     "@mui/material": "5.15.10",
     "@mui/styles": "5.15.10",
@@ -53,6 +53,7 @@
     "redux-thunk": "3.1.0",
     "sass": "1.71.1",
     "slick-carousel": "1.8.1",
+    "swiper": "^11.2.2",
     "web-vitals": "2.1.4"
   },
   "devDependencies": {
